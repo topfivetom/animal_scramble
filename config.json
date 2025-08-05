@@ -1,0 +1,8 @@
+{
+  "diseaseSpreadRate": 0.05,
+  "grassRegrowthRate": 0.02,
+  "cowMovementSpeed": 5,
+  "initialHerdSize": 10,
+  "startingBudget": 50000,
+  "collisionDetection": true
+}
