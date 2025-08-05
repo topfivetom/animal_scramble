@@ -2,7 +2,9 @@
 async function loadConfig() {
   try {
     const response = await fetch('./config.json');
+    if (!response.ok) throw new Error('Config fetch failed');
     const config = await response.json();
+    console.log("Config loaded:", config);
     return {
       diseaseSpreadRate: config.diseaseSpreadRate || 0.05,
       grassRegrowthRate: config.grassRegrowthRate || 0.02,
